@@ -1,0 +1,235 @@
+.main {
+    
+    padding: 10px 20px;
+}
+
+
+.nav {
+    color: gray;
+}
+
+.icon-import {
+    display: flex;
+    padding: 20px 20px;
+    gap: 20px;
+}
+
+.pdf{
+    display: flex;
+    gap:20px
+}
+
+.pdfi {
+    border: 1px solid rgb(166, 163, 163);
+    color: red;
+    font-size: 25px;
+    background-color: white;
+    border-radius: 5px ;
+    padding: 5px 5px;
+}
+
+.excel {
+    border: 1px solid rgb(166, 163, 163);
+    color: greenyellow;
+    font-size: 25px;
+    background-color: white;
+    border-radius: 5px ;
+    padding: 5px 5px;
+}
+
+.refresh {
+    border: 1px solid rgb(166, 163, 163);
+    font-size: 25px;
+    background-color: white;
+    border-radius: 5px ;
+    padding: 5px 5px;
+}
+
+.uparrow {
+    border: 1px solid rgb(166, 163, 163);
+    color: gray;
+    font-size: 25px;
+    background-color: white;
+    border-radius: 5px ;
+    padding: 5px 5px;
+}
+
+.mul-icon {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.pluse-circle {
+    font-size:20px
+}
+
+.icon2{
+    border: 1px solid gray;
+    text-decoration: none;
+    color: white;
+    background-color: orange;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    display: flex;
+    gap:5px;
+    border-radius:5px;
+
+}
+
+.down {
+    border: 1px solid gray;
+    text-decoration: none;
+    color: white;
+    background-color:rgb(23, 0, 128);
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    display: flex;
+    gap:5px;
+    border-radius:5px;
+}
+
+.search {
+    background-color: white;
+    border: 1px solid gray;
+    padding: 20px 50px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+    
+}
+
+.tab-search {
+    display: flex;
+    justify-content: space-between;
+
+}               
+
+.search-box{
+    border: 1px solid gray;
+    padding: 10px 10px;
+    align-items: center;
+    display: flex;
+    border-radius: 5px;
+    width: 150px
+}
+
+.search-bar{
+    border: none;
+    width: 100px;
+    font-size: 20px;
+}
+
+.select {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 0px 5px;
+}
+
+.pro-det {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid gray;
+    border-top: none;
+    background-color: white;
+}
+
+.details-bar {
+    align-items: center;
+}
+
+.setting {
+    display: flex;
+    position: fixed;
+    justify-content: end;
+    width: 97%;
+    top: 180px;
+    font-size: 30px;
+}
+/* 
+.three-icon {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+} */
+
+.eye {
+    border: 1px solid rgb(225, 223, 223);
+    padding: 8px;
+    border-radius: 5px;
+}
+
+
+.raw {
+    display: flex;
+    color: gray;
+    gap: 10px;
+    align-items: center;
+    padding: 0px 30px;
+    
+}
+
+.opt {
+    width: 40px;
+    height: 20px;
+    border: none;
+    border-radius: 5px;
+    color: gray;
+}
+
+.arrow-back {
+    align-items: center;
+    justify-content:flex-end;
+    display: flex;
+    gap: 20px;
+    color: gray;
+}
+
+.num {
+    background-color: orange;
+    color: white;
+    border-radius: 100px;
+    width: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid gray;
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.data-details{
+    display: flex;
+}
+
+
+
+.i-setting {
+   background-color: orange;
+   border-radius: 50px;
+   color:white
+}
+
+.tab {
+    width: 100%;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  border: none;
+  border-bottom:1px solid gray;
+}
+
+ th, td {
+  border-color: gray;
+}
