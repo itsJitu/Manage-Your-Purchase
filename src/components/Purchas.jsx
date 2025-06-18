@@ -17,102 +17,102 @@ import { IoIosArrowForward } from "react-icons/io";
 const dummyData = [
   {
     id: 1,
-    date: "2025-06-01",
-    supplierName: "Acme Corp",
-    referenceNumber: "REF-001",
-    status: "Pending",
+    date: "24 Dec 2024",
+    supplierName: "Electro Mart",
+    referenceNumber: "PT001",
+    status: "Received",
     amount: 1500.0,
     amountPaid: 500.0,
     dueAmount: 1000.0,
-    paymentStatus: "Partially Paid",
+    paymentStatus: "Paid",
   },
   {
     id: 2,
-    date: "2025-06-03",
-    supplierName: "Beta Supplies",
-    referenceNumber: "REF-002",
-    status: "Approved",
-    amount: 2500.0,
-    amountPaid: 2500.0,
-    dueAmount: 0.0,
-    paymentStatus: "Fully Paid",
-  },
-  {
-    id: 3,
-    date: "2025-06-05",
-    supplierName: "Gamma Traders",
-    referenceNumber: "REF-003",
-    status: "Rejected",
-    amount: 800.0,
+    date: "10 Dec 2024",
+    supplierName: "Quantum Gadgets",
+    referenceNumber: "PT002",
+    status: "Pending",
+    amount: 1500.0,
     amountPaid: 0.0,
-    dueAmount: 800.0,
+    dueAmount: 1500.0,
     paymentStatus: "Unpaid",
   },
   {
+    id: 3,
+    date: "27 Nov 2024",
+    supplierName: "Prime Bazar",
+    referenceNumber: "PT003",
+    status: "Received",
+    amount: 1500.0,
+    amountPaid: 1800.0,
+    dueAmount: 0.0,
+    paymentStatus: "Paid",
+  },
+  {
     id: 4,
-    date: "2025-06-07",
-    supplierName: "Delta Imports",
-    referenceNumber: "REF-004",
-    status: "Pending",
-    amount: 3200.0,
+    date: "180Nov 2024",
+    supplierName: "Gadget World",
+    referenceNumber: "PT004",
+    status: "Ordered",
+    amount: 2000.0,
     amountPaid: 1000.0,
-    dueAmount: 2200.0,
-    paymentStatus: "Partially Paid",
+    dueAmount: 1000.0,
+    paymentStatus: "Overdue",
   },
   {
     id: 5,
-    date: "2025-06-10",
-    supplierName: "Epsilon Ltd",
-    referenceNumber: "REF-005",
-    status: "Approved",
-    amount: 1800.0,
-    amountPaid: 1800.0,
+    date: "06 Nov 2024",
+    supplierName: "Volt Vault",
+    referenceNumber: "PT005",
+    status: "Received",
+    amount: 800.0,
+    amountPaid: 800.0,
     dueAmount: 0.0,
-    paymentStatus: "Fully Paid",
+    paymentStatus: "Paid",
   },
   {
     id: 6,
-    date: "2025-06-07",
-    supplierName: "Delta Imports",
-    referenceNumber: "REF-004",
+    date: "25 Oct 2024",
+    supplierName: "Elite Retail",
+    referenceNumber: "PT006",
     status: "Pending",
-    amount: 3200.0,
-    amountPaid: 1000.0,
-    dueAmount: 2200.0,
-    paymentStatus: "Partially Paid",
+    amount: 750.0,
+    amountPaid: 0.0,
+    dueAmount: 750.0,
+    paymentStatus: "Unpaid",
   },
   {
     id: 7,
-    date: "2025-06-07",
-    supplierName: "Delta Imports",
-    referenceNumber: "REF-004",
-    status: "Return",
-    amount: 3200.0,
-    amountPaid: 1000.0,
-    dueAmount: 2200.0,
-    paymentStatus: "Partially Paid",
+    date: "14 Oct 2024",
+    supplierName: "Prime Mart",
+    referenceNumber: "PT007",
+    status: "Received",
+    amount: 1300.0,
+    amountPaid: 1300.0,
+    dueAmount: 0.0,
+    paymentStatus: "Paid",
   },
   {
     id: 8,
-    date: "2025-06-07",
-    supplierName: "Delta Imports",
+    date: "03 Oct 2024",
+    supplierName: "NeoTech Store",
     referenceNumber: "REF-004",
-    status: "Pending",
-    amount: 3200.0,
-    amountPaid: 1000.0,
-    dueAmount: 2200.0,
-    paymentStatus: "Partially Paid",
+    status: "Received",
+    amount: 1100.0,
+    amountPaid: 1100.0,
+    dueAmount: 0.0,
+    paymentStatus: "Paid",
   },
   {
     id: 9,
-    supplierName: "Delta Imports",
-    referenceNumber: "REF-004",
+    supplierName: "Urban Mart",
+    referenceNumber: "PT009",
     date: "2025-06-07",
-    status: "Return",
+    status: "Ordered",
     amount: 3200.0,
-    amountPaid: 1000.0,
-    dueAmount: 2200.0,
-    paymentStatus: "Partially Paid",
+    amountPaid: 3200.0,
+    dueAmount: 3200.0,
+    paymentStatus: "Paid",
   },
   {
     id: 10,
@@ -123,34 +123,26 @@ const dummyData = [
     amount: 3200.0,
     amountPaid: 1000.0,
     dueAmount: 2200.0,
-    paymentStatus: "Partially Paid",
+    paymentStatus: "Paid",
   },
 ];
 
 const SupplierRow = ({ supplier }) => {
   const getStatusColor = (status) => {
     switch (status) {
-      case "Approved":
-        return "approved";
-      case "Pending":
-        return "pending";
-      case "Rejected":
-        return "rejected";
-      default:
-        return "return";
+      case "Received": return "approved";
+      case "Pending": return "pending";
+      case "Order": return "rejected";
+      default: return "return";
     }
   };
 
   const getPaymentStatusColor = (paymentStatus) => {
     switch (paymentStatus) {
-      case "Fully Paid":
-        return "fpaid";
-      case "Partially Paid":
-        return "ppaid";
-      case "Unpaid":
-        return "upaid";
-      default:
-        return "rpaid";
+      case "Paid": return "fpaid";
+      case "Unpaid": return "ppaid";
+      case "Overdue": return "upaid";
+      default: return "rpaid";
     }
   };
 
@@ -160,15 +152,15 @@ const SupplierRow = ({ supplier }) => {
         <td>{supplier.supplierName}</td>
         <td>{supplier.referenceNumber}</td>
         <td>{supplier.date}</td>
-        <td className={`${getStatusColor(supplier.status)}`}>{supplier.status}</td>
+        <td><span className={`${getStatusColor(supplier.status)}`}>{supplier.status}</span></td>
         <td>${supplier.amount.toFixed(2)}</td>
         <td>${supplier.amountPaid.toFixed(2)}</td>
         <td>${supplier.dueAmount.toFixed(2)}</td>
-        <td className={`${getPaymentStatusColor(supplier.paymentStatus)}`}>• {supplier.paymentStatus}</td>
-         <td className="">
+        <td><span className={`${getPaymentStatusColor(supplier.paymentStatus)}`}> • {supplier.paymentStatus}</span></td>
+         <td><span className="three-icon" style={{textAlign:'center', display:'flex'}}>
               <IoEyeOutline className="eye" />
               <FaRegEdit className="eye" />
-              <RiDeleteBinFill className="eye" />
+              <RiDeleteBinFill className="eye" /></span>
             </td>
       </tr>
    

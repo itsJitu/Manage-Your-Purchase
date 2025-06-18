@@ -144,17 +144,23 @@
     display: flex;
     position: fixed;
     justify-content: end;
-    width: 97%;
-    top: 180px;
+    width: 98%;
+    top: 170px;
     font-size: 30px;
+    padding: 2px 15px;
 }
-/* 
-.three-icon {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    align-items: center;
-} */
+
+
+.i-setting {
+   background-color: orange;
+   border-radius: 50px;
+   color:white;
+   padding: 15px ; 
+}
+
+ .three-icon {
+    gap: 10px;
+}  
 
 .eye {
     border: 1px solid rgb(225, 223, 223);
@@ -201,7 +207,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid gray;
+    border: 1px solid rgb(146, 143, 143);
     border-top: none;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -209,14 +215,6 @@
 
 .data-details{
     display: flex;
-}
-
-
-
-.i-setting {
-   background-color: orange;
-   border-radius: 50px;
-   color:white
 }
 
 .tab {
@@ -230,6 +228,71 @@ table, th, td {
   border-bottom:1px solid gray;
 }
 
- th, td {
-  border-color: gray;
+ th{
+  border-color: 1px solid gray;
+  background-color: rgb(238, 236, 236);
+  padding: 17px 8px;
+  justify-content: space-between;
+}
+
+td {
+    padding: 8px 8px;
+   
+}
+
+
+.approved{
+    padding: 3px 5px;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+}
+
+.pending{
+    padding: 3px 5px;
+    border-radius: 5px;
+    background-color: rgb(27, 133, 209);
+    color: white;
+}
+
+.rejected{
+    padding: 3px 5px;
+    border-radius: 5px;
+    background-color: rgb(226, 59, 8);
+    color: white;
+}
+
+.return{
+    padding: 3px 5px;
+    border-radius: 5px;
+    background-color: rgb(147, 187, 14);
+    color: white;
+}
+
+.fpaid{
+    padding: 3px 5px;
+    border-radius: 5px;
+    background-color: rgb(185, 224, 177);
+    color: rgb(48, 189, 46);
+}
+
+.ppaid{
+    padding: 3px 5px;
+    border-radius: 5px;
+    background-color: rgb(246, 246, 167);
+    color: rgb(148, 148, 6);
+}
+
+.upaid{
+    padding: 3px 5px;
+    border-radius: 5px;
+    background-color: rgb(235, 176, 176);
+    color: rgb(211, 27, 27);
+}
+
+.rpaid{
+    padding: 3px 5px;
+    border-radius: 5px;
+    background-color: rgb(212, 223, 176);
+    color: rgb(48, 189, 46);
 }
