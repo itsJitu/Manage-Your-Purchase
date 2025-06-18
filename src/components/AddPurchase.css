@@ -11,9 +11,8 @@
 .close {
     color:red;
     font-size: 30px;
-    background-color: white;
     padding: 0px 20px;
-
+    border-radius: 50px;
 }
 
 .hero {
