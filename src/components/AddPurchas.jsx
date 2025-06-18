@@ -1,5 +1,6 @@
 
 import React, { useState, useRef, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import { CiCirclePlus } from "react-icons/ci";
@@ -52,7 +53,9 @@ function AddPurchase() {
       <div>
         <div className="header">
           <h1>Add Purchase</h1>
+          <Link to="/">
           <IoMdCloseCircle className="close" />
+          </Link>
         </div>
 
         <div className="pro">
@@ -183,9 +186,9 @@ function AddPurchase() {
         <div className='footer'>
 
           <div className='footer-button'>
-            <a href="#" className='cancel'>
+            <Link to="/" className='cancel'>
               Cancel
-            </a>
+            </Link>
          
             <a href="Product-details" className='submit'>
               Submit
